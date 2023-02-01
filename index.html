@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script> 
+    <!-- defer will load the js after the body of html -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <!-- data-cell is used here to easily acces this info in the javascript without using class cell since that is going to be used in our css-->
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text>X wins!</div>
+        <button id="restartButton">Restart</button>
+    </div>
+</body>
+</html>
